@@ -1,0 +1,129 @@
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+.body__leftSidebar {
+  background-color: #161718;
+  flex: 1;
+  width: 25%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 92vh;
+  position: fixed;
+  left: 0;
+  top: 50px;
+  z-index: 99;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.body__feed {
+  flex: 2;
+}
+
+.body__rightSidebar {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  flex: 1;
+  height: 92vh;
+  position: fixed;
+  right: 0;
+  top: 35px;
+  z-index: 99;
+  width: 25%;
+  margin-top: 1rem;
+  padding: 1rem 0.5rem;
+  background-color: #161718;
+}
+
+.rightSidebar__row {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #73767962;
+}
+
+.rightSidebar__row > h3 {
+  font-size: large;
+  font-weight: 500;
+}
+
+.rightSidebar__row:last-child > .rightSidebar__rowHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rightSidebar__rowHeader > .icons {
+  flex: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.rightSidebar__rowHeader .icons .MuiSvgIcon-root {
+  transform: scale(1.4);
+  padding: 0.3rem;
+  margin: 0 1rem 0 0.5rem;
+  border-radius: 999px;
+  background-color: #39393a;
+  color: #e0e1e4;
+}
+
+.rightSidebar__rowHeader .icons .MuiSvgIcon-root:hover {
+  background-color: #7f7f83a8;
+}
+
+.sidebarNail {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0.1rem 0;
+  cursor: pointer;
+  padding: 0.65rem 0.5rem;
+  border-radius: 6px;
+  transition: 0.2s ease-in;
+}
+
+.sidebarNail:hover {
+  background-color: #51515250;
+}
+
+.sidebarNail__icon {
+  transform: scale(0.8);
+  transition: 0.2s ease-in;
+  border-radius: 6px;
+}
+
+.sidebarNail > .MuiSvgIcon-root {
+  transform: scale(1.4);
+  padding: 0.3rem;
+  margin: 0 1rem 0 0.5rem;
+  border-radius: 999px;
+  background-color: #39393a;
+  color: #e0e1e4;
+}
+
+.sidebarNail > p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 952px) {
+  .body__leftSidebar {
+    display: none;
+  }
+  .body__rightSidebar {
+    width: 38%;
+  }
+}
+
+@media (max-width: 625px) {
+  .body__rightSidebar {
+    display: none;
+  }
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import HomeIcon from "@material-ui/icons/Home";
@@ -10,8 +10,13 @@ import AddIcon from "@material-ui/icons/Add";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import NotificationsIcon from "@material-ui/icons/Notifications";
+import { useContextValue } from "../../data/ContextApiProvider";
 
 const Header = () => {
+  const { state, dispatch } = useContextValue();
+  useEffect(() => {
+    console.log(state, dispatch);
+  });
   return (
     <div className="header">
       <div className="header__left">

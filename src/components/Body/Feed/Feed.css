@@ -1,0 +1,286 @@
+.feed {
+  min-height: 120vh;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.story {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 85%;
+  margin: auto;
+}
+
+.card {
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+  height: 200px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card > img {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+
+.card > img:hover {
+  height: 102%;
+  opacity: 0.7;
+}
+
+.card > .avatar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: scale(0.9);
+  border: 0.23888rem solid #0084ff;
+}
+
+.card > p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+.onYourMind {
+  margin: 2rem auto;
+  padding: 0.8rem 1rem;
+  width: 75%;
+  border-radius: 6px;
+  background-color: #3a3c3d57;
+}
+
+.onYourMind__input {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(138, 134, 134, 0.63);
+}
+
+.onYourMind__input > button {
+  color: inherit;
+  text-transform: inherit;
+  border-radius: 999px;
+  outline: none;
+  padding: 0.2rem;
+  margin-left: 0.2rem;
+  background-color: rgb(16, 92, 179);
+  border: 1px solid rgb(9, 61, 104);
+}
+
+.onYourMind__input > input:nth-child(2) {
+  flex: 2;
+  width: 70%;
+  padding: 0.7rem 0.8rem;
+  border-radius: 999px;
+  color: #949597;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  margin-left: 0.5rem;
+  background-color: #39393a;
+  outline: none;
+  border: none;
+  color: rgb(224, 224, 224);
+}
+
+.onYourMind__inputIcons span {
+  position: relative;
+  color: #08e074bd;
+  cursor: pointer;
+}
+
+.onYourMind__inputIcons span > .MuiSvgIcon-root {
+  z-index: 99;
+}
+
+.onYourMind__inputIcons span > input {
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  font-size: 24px;
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.onYourMind__input > .avatar {
+  transform: scale(0.85);
+}
+
+.onYourMind__inputIcons {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.onYourMind__inputIconsRow {
+  display: flex;
+  padding: 0.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.onYourMind__inputIcons .MuiSvgIcon-root {
+  transform: scale(1.1);
+  /* padding: 0.3rem; */
+}
+
+.onYourMind__inputIconsRow > .MuiSvgIcon-root:first-child {
+  color: rgb(253, 37, 37);
+}
+
+.onYourMind__inputIconsRow > span > .MuiSvgIcon-root:last-child {
+  color: rgb(251, 255, 2);
+}
+
+.onYourMind__inputIconsRow:hover {
+  background-color: rgba(70, 70, 70, 0.315);
+  border-radius: 6px;
+}
+
+.allPosts {
+  width: 75%;
+  margin: -1rem auto;
+}
+
+.allPosts__singlePost {
+  width: 100%;
+  padding-bottom: 0.1rem;
+  background-color: #3a3c3d57;
+  border-radius: 6px;
+}
+
+.allPosts__singlePostHeader {
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.allPosts__singlePostHeader__left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.allPosts__singlePostHeader__left > .avatar {
+  transform: scale(0.87);
+}
+
+.allPosts__singlePostHeader__leftText {
+  margin-left: 0.2rem;
+}
+
+.allPosts__singlePostHeader__leftText > p {
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.allPosts__singlePostHeader__leftText > span {
+  font-weight: 200;
+  font-size: small;
+  display: flex;
+  align-items: center;
+}
+
+.allPosts__singlePostHeader__leftText > span > .MuiSvgIcon-root {
+  transform: scale(0.6);
+}
+
+.allPosts__singlePostSnippet {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.allPosts__singlePostSnippet > p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.45rem;
+}
+
+.allPosts__singlePostImage {
+  width: 100%;
+  overflow-y: hidden;
+  max-height: 80vh;
+}
+
+.allPosts__singlePostImage > img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.allPosts__singlePostInterect {
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0.0001rem solid rgba(255, 255, 255, 0.199);
+  border-bottom: 0.0001rem solid rgba(255, 255, 255, 0.158);
+}
+
+.allPosts__singlePostInterectRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  transform: scale(0.9);
+  padding: 0.5rem 0.3rem;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+
+.onYourMind__input {
+  margin: 0.5rem 1rem;
+}
+
+.allPosts__singlePostInterectRow > p {
+  margin-left: 0.5rem;
+}
+
+.allPosts__singlePostInterectRow:hover {
+  background-color: #3b3a3aab;
+}
+
+@media (max-width: 952px) {
+  .feed {
+    width: 66%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 625px) {
+  .feed {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .story {
+    width: 95vw;
+    margin: 0;
+  }
+  .card {
+    width: 25%;
+    height: 180px;
+    overflow-x: scroll;
+  }
+  .onYourMind {
+    width: 75vw;
+    margin: 2rem 10vw;
+  }
+  .allPosts {
+    width: 75vw;
+    margin: 2rem 10vw;
+  }
+  .onYourMind__input > button {
+    display: none;
+  }
+}

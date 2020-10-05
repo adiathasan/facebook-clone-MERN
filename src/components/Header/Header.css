@@ -1,5 +1,6 @@
 .header {
   background-color: #1e2022;
+  /* width: 100vw; */
   position: sticky;
   top: 0;
   left: 0;
@@ -17,7 +18,6 @@
   object-fit: contain;
   border-radius: 999px;
   background-color: transparent;
-  /* box-shadow: 0px 0px 100px 1px #ffffff; */
 }
 
 .header__left {
@@ -51,11 +51,10 @@
 .header__middle {
   flex: 1.5;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .header__middle > .MuiSvgIcon-root {
-  margin: 0 1rem;
   transform: scale(2.2);
   padding: 0.25rem 0.4rem;
   transition: 0.2s ease-in;
@@ -84,7 +83,7 @@
 }
 
 .header__right > .avatar {
-  transform: scale(0.8);
+  transform: scale(0.75);
 }
 
 .header__right > button .MuiSvgIcon-root {
@@ -92,7 +91,7 @@
   padding: 0.3rem;
   border-radius: 999px;
   background-color: #39393a;
-  color: #cccdcf;
+  color: #e0e1e4;
 }
 
 .header__right > button .MuiSvgIcon-root:hover {
@@ -104,8 +103,15 @@
   font-weight: 300;
 }
 
+@media (max-width: 618px) {
+  .header__middle {
+    display: none;
+  }
+}
+
 @media (max-width: 1027px) {
   .header__left > form {
+    margin-left: 0;
     max-width: 50px;
     transform: scale(0.7);
     padding: 0.8rem 0.8rem;
